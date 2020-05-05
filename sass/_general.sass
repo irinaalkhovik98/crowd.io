@@ -1,0 +1,248 @@
+body 
+  background-color: #e7eae3
+
+.container
+    max-width: 1200px
+    margin: auto
+
+.header
+  @include display_mix
+  .logo
+    display: flex
+    padding-left: 40px
+    text-decoration: none
+    &_img
+      max-width: 15%
+    &_name
+      color: #090302
+  .nav 
+    margin-right: 35px
+    &_menu
+      display: flex
+      list-style: none
+      justify-content: flex-end
+    &_item:not(:last-child)
+      padding-right: 15px
+    .menu_link
+      text-decoration: none
+      color: #383f51
+  .buttons
+    @include display_mix
+    .btn
+      @include display_mix
+      padding: 8px 10px
+      background: #cadbc8;
+      border: 1px solid #D9D9D9
+      box-sizing: border-box
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015)
+      border-radius: 2px
+      color: #1f0812
+      font-size: 16px
+      line-height: 24px
+      width: 175px
+    .btn-primary
+      background: #cadbc8
+      border: 1px solid #D9D9D9
+      color: #2b1820
+      margin-right: 10px
+    .button-icon
+      max-width: 14%
+    .button-icons
+      max-width: 14%
+    .button-text
+      padding-left: 10px
+      
+.promo
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1)
+  border-radius: 10px
+  background: #efe9f4 url(../img/promo-image.png) no-repeat top 0px right 0%/40%
+  padding: 10px 70px
+  margin-bottom: 56px
+  .promo-title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 46px
+    color: #302C34
+  .promo-text
+    max-width: 538px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    color: #302C34   
+  .promo-link
+    margin-left: 30%
+    font-size: 19px
+    text-decoration: none
+    font-weight: 600     
+
+  .wrapper
+    width: 400px
+    @include display_mix
+    .bar
+      width: 100%
+      height: 20px
+      background: #beb7a4
+      border-radius: 25px 
+    .progress__bar
+      position: absolute
+      height: 20px
+      text-align: center
+      background: #f6f8
+      border-radius: 25px
+
+      //animation: process 0.8s linear forwards; 
+    @keyframes process
+      0%
+        width: 0
+      25%
+        width: 25%
+      50%
+        width: 50%
+
+.main
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%)
+  .section-heading
+    @include display_mix
+    margin-bottom: 44px
+  .section-title
+    font-weight: bold
+    font-size: 36px
+    line-height: 42px
+    color: #000000
+    margin: 0
+    margin-right: 30px
+  .section_btn,
+  .btn-card-text
+    background: #cadbc8
+    border: 1px solid #D9D9D9
+    color: #2b1820
+    margin-right: 10px
+    padding: 7px
+  .cards
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+  .card, .card-person
+    background: #FFFFFF
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
+    border-radius: 7px
+    overflow: hidden
+    margin-bottom: 30px
+    flex-basis: 31%
+    text-decoration: none
+    .card-image
+      width: 222px
+      height: 223px
+      object-fit: cover
+    .card-text
+      padding: 20px 23px 35px 23px
+    .card-heading
+      @include display_mix
+      justify-content: space-between
+      margin-bottom: 10px
+    .card-title, .project-card_descr
+      margin: 0
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      color: #000000
+    .card-tag, .project-card_tag
+      background: #262626
+      border-radius: 2px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 20px
+      color: #FFFFFF
+      padding: 1px 8px
+      &_link
+        color: #fff
+        text-decoration: none
+    .card-info
+      @include display_mix
+      flex-wrap: wrap
+    .card-button
+      @include display_mix
+      margin-top: 24px
+      justify-content: end
+    .teacher-name
+      margin-right: 26px
+      color: #FFC107
+      font-weight: bold
+      font-size: 18px
+      line-height: 32px
+  .list
+    .card-person
+      @include display_mix
+      justify-content: space-around
+    .card-img
+      width: 13%
+      height: 44%
+      padding-left: 25px
+  .project
+    .project-header
+      @include display_mix
+      justify-content: space-between
+      margin-bottom: 10px
+    .project-card
+      display: flex
+      .project-card-info
+        display: block
+        width: 50%
+        height: 100%
+        padding: 7px 15px 40px 15px
+        background-color: #fff
+      .project-card-info:not(:last-child)
+        margin-right: 10px
+      .project-card-img
+        width: 13%
+        height: 44%
+        padding-left: 25px
+      .project-title-reg
+        color: cadetblue
+      .project-title
+        font-size: 20px
+      .project-card-progress
+        display: block
+        max-width: 100%
+        height: 4px
+        margin-bottom: 20px
+        background: #cadbc8
+        &_bar
+          display: block
+          max-width: 39%
+          height: 4px
+          margin-bottom: 20px
+          background: linear-gradient(90deg,#629fff 0,#36f 100%)
+.footer
+  padding: 20px 0
+  .footer-block
+    @include display_mix
+    justify-content: space-between
+    .logo
+      display: flex
+      padding-left: 40px
+      text-decoration: none
+      &_img
+        max-width: 15%
+      &_name
+        color: #090302
+    .footer-nav
+      display: flex
+      margin-right: 70px
+    .footer-link
+      display: inline-block
+      font-size: 18px
+      line-height: 21px
+      color: #595959
+      text-decoration: none
+      &:not(:last-child)
+        margin-right: 15px
+    .social-links
+      @include display_mix
+    .social-link:not(:last-child)
+      margin-right: 21px
+

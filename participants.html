@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>CROWD</title>
+</head>
+<body>
+  <!-- Главная страница включает в себя карточку проекта, градации проектов, блок с наставниками, остальное окружение уже полностью зависит от вашего усмотрения, как сделать шапку, футер и прочее можете решать сами. 
+  Карточка проекта включает в себя руководителя, шкалу заполнения сбора средств на проект, название, фото, краткую информацию, ссылку Подробнее>>. -->
+  <div class="container">
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="img/CROWD_LOGO.svg" alt="logo" class="logo_img">
+          <h1 class="logo_name">CROWD</h1></a>
+      <nav class="nav">
+        <ul class="nav_menu">
+          <li class="nav_item"><a href="#" class="menu_link">Главная</a></li>
+          <li class="nav_item"><a href="#" class="menu_link">Проекты</a></li>
+          <li class="nav_item"><a href="#teachers" class="menu_link">Наставники</a></li>
+          <li class="nav_item"><a href="participants.html" class="menu_link">Участники</a></li>
+        </ul>
+      </nav>
+      <!-- /.nav -->
+      <div class="buttons">
+        <button class="btn btn-primary">
+          <img src="img/project.svg" alt="cart" class="button-icons">
+          <span class="button-text">Создать проект</span>
+      </button>
+      <button class="btn">
+        <img src="img/user.svg" alt="user" class="button-icon">
+        <span class="button-text">Войти</span>
+    </button>
+    </div>
+  </header>
+  <!-- /.header -->
+  </div>
+  <main class="main">
+    <div class="container">
+      <section class="promo">
+        <h1 class="promo-title">
+          Выставка начинающего <br> фотографа из города Осло
+        </h1>
+        <!-- /.promo-title -->
+        <p class="promo-text">
+          Только здесь будет собрано столько оформленных фотографий, сколько возможно увидеть лишь обойдя несколько выставок. И только здесь каждую из них можно будет приобрести прямо на месте. <br>
+          <strong> Организатор:</strong> Max-Fun
+        </p>
+        <div class="wrapper">
+            <div class="bar"></div> 
+           <div class="progress__bar"></div>
+        </div>
+        <span>Сбор средств: <strong>100000 ₽</strong></span>
+        <a href="#" class="promo-link">Подробнее</a>
+        <!-- /.promo-text -->
+      </section>
+      <!-- /.promo -->
+
+      <section class="participants">
+        <div class="section-heading">
+          <h2 class="section-title" id="">Участники</h2>
+          <!-- /.section-title -->
+          <button class="section_btn all-participants">Показать всех участников</button>
+        </div>
+        <!-- /.section-heading -->
+        <div class="list">
+          <div class="card-person">
+            <img src="./img/person.svg" alt="image" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Вив Тэт, 28 лет, Сидней, Инвестор</h3>
+                <!-- /.card-title -->
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+              <div class="ingredints">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero, a ratione reprehenderit, odit, veritatis libero hic soluta omnis facere error delectus consectetur quibusdam nam. Cupiditate illo labore nobis quos. </div>
+              </div>
+              <!-- /.card-info -->
+              <div class="card-button">
+                <button class="btn btn-primary btn-card-text">
+                  Подробнее об участнике
+                </button>
+              </div>
+            </div>
+            <!-- /.card-text -->
+          </div>
+          <div class="card-person">
+            <img src="./img/person.svg" alt="image" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title card-title-reg">Тони Старк, 40 лет, Вашингтон, тренер</h3>
+                <!-- /.card-title -->
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+              <div class="ingredints">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero, a ratione reprehenderit, odit, veritatis libero hic soluta omnis facere error delectus consectetur quibusdam nam. Cupiditate illo labore nobis quos. </div>
+              </div>
+              <!-- /.card-info -->
+              <div class="card-button">
+                <button class="btn btn-primary btn-card-text">
+                  Подробнее об участнике
+                </button>
+              </div>
+            </div>
+            <!-- /.card-text -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- /.main -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <a href="#" class="logo">
+          <img src="img/CROWD_LOGO.svg" alt="logo" class="logo_img">
+          <h1 class="logo_name">CROWD</h1>
+        </a>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Главная</a>
+          <a href="#" class="footer-link">Проекты</a>
+          <a href="#" class="footer-link">Наставники</a>
+          <a href="#" class="footer-link">Участники</a>
+        </nav>
+        <div class="social-links">
+          <a href="#" class="social-link"><img src="./img/inst_icon.svg" alt="instagram"></a>
+          <a href="#" class="social-link"><img src="./img/facebook-icon.svg" alt="facebook"></a>
+          <a href="#" class="social-link"><img src="./img/vk-icon.svg" alt="vk"></a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  
+  <script src="js/main.js"></script>
+  <script type="module" src="js/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</body>
+</html>
